@@ -73,10 +73,13 @@ Markdown livre. Recomendações:
 
 ## 5. Abrindo o Pull Request
 
-1. Fork + branch: `git checkout -b add-minha-skill`.
+A branch `main` é protegida: **ninguém faz push direto nela**. Toda mudança entra por Pull Request, e o merge é feito exclusivamente pelo mantenedor ([@AbnerSilvaBarbosa](https://github.com/AbnerSilvaBarbosa)).
+
+1. Faça um fork (ou, se você tem acesso de escrita, uma branch): `git checkout -b add-minha-skill`.
 2. Adicione a pasta em `skills/minha-skill/`.
 3. Adicione uma linha no catálogo do [README.md](./README.md).
-4. Commit e PR contra a `main`. Depois do merge, `npx skills add mbs-community/skills-mbs@minha-skill` já funciona para todo mundo.
+4. Commit e abra o PR contra a `main`. O CODEOWNERS pede review do mantenedor automaticamente.
+5. Depois do merge, `npx skills add mbs-community/skills-mbs@minha-skill` já funciona para todo mundo.
 
 No PR, descreva:
 
